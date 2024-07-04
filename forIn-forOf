@@ -1,0 +1,30 @@
+//for in muestra el indice y la propiedad en sí
+//for of muestra los valores de una colección
+
+// for (variable in object) {
+//   statements
+// }
+
+// for (variable of object) {
+//   statement
+// }
+
+let person = {fname:"Cristina", lname:"Zamora", arms:2}; 
+
+let arr = [3, 5, 7];
+arr.foo = 'hello';
+
+let text = "";
+for (let x in person) {
+  text += person[x];
+  console.log(x);
+};
+console.log(text);
+
+for (let i in arr) {
+  console.log(i);
+};
+
+for (let i of arr) {
+  console.log(i);
+};
